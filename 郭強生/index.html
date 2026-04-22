@@ -290,6 +290,25 @@
   }
   .venue-link:hover { background: rgba(106,158,146,0.14); border-color: var(--teal); }
   .venue-link svg { width: 12px; height: 12px; fill: currentColor; flex-shrink: 0; }
+  .register-btn {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.7em 2em;
+    background: linear-gradient(135deg, var(--teal), #4a8a80);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    letter-spacing: 0.15em;
+    transition: all 0.3s;
+    box-shadow: 0 4px 20px rgba(106,158,146,0.3);
+  }
+  .register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(106,158,146,0.45);
+    background: linear-gradient(135deg, #7ab8ac, #5a9e94);
+  }
+
   .invite-text {
     margin-top: 2.5rem; padding-top: 2.5rem;
     border-top: 1px solid rgba(106,158,146,0.15);
@@ -423,6 +442,15 @@
           <div class="event-item">
             <label>聚會主題</label>
             <div class="value">讀《死亡可以是溫柔的》</div>
+          </div>
+          <div class="event-item full">
+            <label>活動報名</label>
+            <div class="value">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLScAZ_JK2WaE1K27-84Woc618Cfj8LbZS7r_6mHVwsJ10g6axQ/viewform?usp=sharing&ouid=102321941481506461639"
+                 target="_blank" rel="noopener" class="register-btn">
+                點此填表報名 →
+              </a>
+            </div>
           </div>
         </div>
         <div class="invite-text">
